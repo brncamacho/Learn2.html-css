@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkviolet;
+            margin: 10px;
+
+        }
+
+        header {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.718);
+
+        }
+
+        nav {
+            background-color: rgb(206, 212, 185);
+            color: aliceblue;
+            font-weight: bold;
+            box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.718);
+
+        }
+
+        nav > a {
+            text-decoration: double;
+            color: rgb(137, 23, 17);
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px; 
+            border-radius: 20px;
+            box-shadow: 1px 1px 1px 2px rgba(96, 76, 76, 0.718);
+
+        }
+
+        article {
+            background-color: bisque;
+            padding: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(180, 119, 40);
+            color: azure;
+            text-decoration: darkgray; 
+
+        }
+
+        article > p {
+            margin: 0px;  
+
+        }
+
+        section {
+            background-color: bisque;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            margin: 10px;
+            padding: 4px;~
+
+        } 
+
+        footer >p {
+            margin: 0px;
+
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>  
+    <header>
+        <h1>O meu site</h1>
+        <nav>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Politica Desporto Notícias</p>
+        </section>
+            <article>
+                <h2>Noticia sobre o Lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur dignissimos dicta expedita ratione corrupti, sapiente, quo culpa voluptas a odit accusamus repellendus distinctio perspiciatis molestias vero ab. Cum, ducimus!</p>
+                <aside>
+                    <p>Artigo escrito por Manuel Joaquim</p>
+                </aside>
+            </article>
+            <article>
+                <aside></aside>
+            </article>
+        
+
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por Bruno Camacho</p>
+
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
