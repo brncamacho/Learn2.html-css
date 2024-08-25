@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        thead, tfoot {
+            background-color: rgba(24, 46, 33, 0.444);
+            color: white;
+
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        th.centro {
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício Tabelas</h1>
+    <!-- 
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE 
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <h4>
+        Esta é uma lista demostrando a população total de cada uma dos dezoito distritos portuguesas, junto com as duas regiões autónomas. Os dados baseiam-se nas estatísticas oficiais do <a href="https://www.ine.pt/xportal/xmain?xpgid=ine_main&xpid=INE" target="_blank">Instituto Nacional de Estatística</a>.
+    </h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="centro">Distrito</th>
+                <th class="centro">População</th>
+
+            </tr>
+        </thead>
+                <tr>
+                    <td>Lisboa</td>
+                    <td class="num">2 301 904</td>
+                </tr>
+                <tr>
+                    <td>Porto</td>
+                    <td class="num">1 819 515 </td>
+                </tr>
+                <tr>
+                    <td>Setúbal</td>
+                    <td class="num">887 928</td>
+                </tr>
+                <tr>
+                    <td>Braga</td>
+                    <td class="num">854 416</td>
+                </tr>
+                <tr>
+                    <td>Aveiro</td>
+                    <td class="num">712 995</td>
+                </tr>
+                <tr>
+                    <td>Faro</td>
+                    <td class="num">472 000</td>
+                </tr>
+                <tr>
+                    <td>Leiria</td>
+                    <td class="num">467 139</td>
+                </tr>
+                <tr>
+                    <td>Santarém</td>
+                    <td class="num">433 782</td>
+                </tr>
+                <tr>
+                    <td>Coimbra</td>
+                    <td class="num">411 450</td>
+                </tr>
+                <tr>
+                    <td>Viseu</td>
+                    <td class="num">362 040</td>
+                </tr>
+                <tr>
+                    <td>Madeira</td>
+                    <td class="num">253 259</td>
+                </tr>
+                <tr>
+                    <td>Açores</td>
+                    <td class="num">239 942</td>
+                </tr>
+                <tr>
+                    <td>Viana do Castelo</td>
+                    <td class="num">232 220</td>
+                </tr>
+                <tr>
+                    <td>Vila Real</td>
+                    <td class="num">184 525</td>
+                </tr>
+                <tr>
+                    <td>Castelo Branco</td>
+                    <td class="num">177 719</td>
+                </tr>
+                <tr>
+                    <td>Évora</td>
+                    <td class="num">152 853</td>
+                </tr>
+                <tr>
+                    <td>Beja</td>
+                    <td class="num">146 725</td>
+                </tr>
+                <tr>
+                    <td>Guarda</td>
+                    <td class="num">141 261</td>
+                </tr>
+                <tr>
+                    <td>Bragança</td>
+                    <td class="num">122 218</td>
+                </tr>
+                <tr>
+                    <td>Portalegre</td>
+                    <td class="num">104 121</td>
+                </tr>
+
+        <tbody>
+
+        </tbody>
+
+        <tfoot>
+                <th class="centro">Total de Habitantes</th>
+                <td class="num"><strong>10 467 366</strong></td>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
