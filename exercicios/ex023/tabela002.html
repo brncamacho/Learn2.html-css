@@ -21,9 +21,27 @@
 
         }
 
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
+
         thead, tfoot {
-            background-color: rgba(24, 46, 33, 0.444);
+            background-color: rgba(90, 123, 104, 0.751);
             color: white;
+
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgba(222, 222, 222, 0.156);
+
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
 
         }
 
@@ -43,6 +61,7 @@
     <!-- 
     ANATOMIA PARA TABELAS GRANDES
     TABLE 
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -51,13 +70,14 @@
             TR, TD, TH
     -->
     <h4>
-        Esta é uma lista demostrando a população total de cada uma dos dezoito distritos portuguesas, junto com as duas regiões autónomas. Os dados baseiam-se nas estatísticas oficiais do <a href="https://www.ine.pt/xportal/xmain?xpgid=ine_main&xpid=INE" target="_blank">Instituto Nacional de Estatística</a>.
+        Esta é uma lista demostrando a população total de cada um dos dezoito distritos portugueses, junto com as duas regiões autónomas. Os dados baseiam-se nas estatísticas oficiais do <a href="https://www.ine.pt/xportal/xmain?xpgid=ine_main&xpid=INE" target="_blank">Instituto Nacional de Estatística</a>.
     </h2>
     <table>
+        <caption>Título da tabela / Caption</caption>
         <thead>
             <tr>
-                <th class="centro">Distrito</th>
-                <th class="centro">População</th>
+                <th class="centro" scope="col">Distrito</th>
+                <th class="centro" scope="col" style="width: 100px;">População</th>
 
             </tr>
         </thead>
@@ -147,7 +167,7 @@
         </tbody>
 
         <tfoot>
-                <th class="centro">Total de Habitantes</th>
+                <th class="centro" scope="row">Total de Habitantes</th>
                 <td class="num"><strong>10 467 366</strong></td>
         </tfoot>
 
