@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid darkgray;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+
+        }  
+
+        tr.destaque {
+            background-color: goldenrod;
+
+        }
+
+        col.cnome {
+            background-color: yellowgreen;
+
+        }
+
+        col.csexo, col.cidade {
+            background-color: crimson;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1></h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio Simões</td>
+            <td>Masculino</td>
+            <td>30</td>
+            <td>Programador</td>
+        </tr>
+        <tr class="destaque">
+            <td>Catarina</td>
+            <td>Feminino</td>
+            <td>20</td>
+            <td>Desempregada</td>
+        </tr>
+        <tr>
+            <td>Isabel Ramos</td>
+            <td>Feminino</td>
+            <td>31</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Manuel Damásio</td>
+            <td>Masculino</td>
+            <td>49</td>
+            <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>João Artur</td>
+            <td>Masculino</td>
+            <td>29</td>
+            <td>Polícia</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
