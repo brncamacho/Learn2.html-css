@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+    <body>
+        <h1>Exemplo de formulário</h1>
+        <form action="registo.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Distrito</label>  
+            <select name="estado" id="iest">
+
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Grupo1">
+                    <option value="LX">Lisboa</option>
+                    <option value="PT">Porto</option>
+                    <option value="FR">Faro</option>
+                </optgroup>
+                <optgroup label="Grupo2">
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                    <option value="FR">Faro</option>
+                </optgroup>
+
+            </select> 
+        </p>  
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Vendedor</option>
+                <option>Professor</option>        
+            </datalist>
+        </p>
+
+        <p>
+            <label for="img">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva aqui a sua mensagem!"></textarea>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+</form>
+</body>
+</html>
